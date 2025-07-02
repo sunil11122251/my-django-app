@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head><title>Student List</title></head>
+<body>
+  <h1>Students</h1>
+  <ul>
+    {% for student in students %}
+      <li>{{ student.name }} ({{ student.age }}) - {{ student.email }}</li>
+    {% empty %}
+      <li>No students found.</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
